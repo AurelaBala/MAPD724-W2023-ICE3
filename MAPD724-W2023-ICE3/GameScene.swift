@@ -88,10 +88,13 @@ override func sceneDidLoad()
         plane?.Update()
         island?.Update()
         
+        CollisionManager.SquaredRadiusCheck(scene: self, object1: plane!, object2: island!)
+        
         //update each cloud in clouds
         for cloud in clouds
         {
             cloud.Update()
+            CollisionManager.SquaredRadiusCheck(scene: self, object1: plane!, object2: cloud)
         }
     }
 }
