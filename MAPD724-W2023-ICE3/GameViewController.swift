@@ -33,6 +33,8 @@ class GameViewController: UIViewController
                     view.ignoresSiblingOrder = true
                     
                 }
+                
+                
             }
         }
     }
